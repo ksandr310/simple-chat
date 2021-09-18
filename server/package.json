@@ -1,8 +1,8 @@
 {
 	"name": "simple-chat",
 	"description": "A React simple chat application, powered by WebSocket",
-	"private": true,
 	"version": "0.0.1",
+	"private": true,
 	"main": "lib/main.js",
 	"scripts": {
 		"start": "node ."
