@@ -1,0 +1,13 @@
+{
+	"name": "simple-chat",
+	"description": "A React simple chat application, powered by WebSocket",
+	"private": true,
+	"version": "0.0.1",
+	"main": "lib/main.js",
+	"scripts": {
+		"start": "node ."
+	},
+	"dependencies": {
+		"ws": "^7.5.2"
+	}
+}
