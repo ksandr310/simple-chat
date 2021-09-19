@@ -1,2 +1,30 @@
+@import 'src/stylesheets/colors.scss';
+@import 'src/stylesheets/common.scss';
+
 .auth-page {
+    align-items: center;
+    background-color: $auth-page-background;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    line-height: 24px;
+
+    &__title {
+        font-size: $font-size-title;
+        line-height: 32px;
+    }
+
+    &__description {
+        font-size: $font-size-large;
+    }
+
+    &__input {
+        font-size: $font-size-large;
+    }
+
+    &__button {
+        font-size: $font-size-large;
+    }
 }
