@@ -1,0 +1,7 @@
+@import 'src/stylesheets/common.scss';
+
+@mixin withFont($fontSize: $font-size, $fontWeight: $font-weight) {
+    font-family: cursive;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+};

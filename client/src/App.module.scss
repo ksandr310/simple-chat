@@ -1,7 +1,11 @@
+@import 'src/stylesheets/colors.scss';
+
 .app {
     display: flex;
     flex-direction: column;
     font-family: cursive;
+    max-width: 1200px;
     min-height: 100%;
     overflow: hidden;
+    margin: 0 auto;
 }

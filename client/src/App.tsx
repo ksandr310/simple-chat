@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AuthPage } from './pages';
+import { AuthPage, ChatPage } from './pages';
 
 import styles from './App.module.scss';
 
@@ -11,7 +11,7 @@ const App: React.FC = () => (
         <BrowserRouter>
             <Routes>
                 <Route path={'/'} element={<AuthPage />} />
-                <Route path={'/chat/:name'} element={<div>{'chat page'}</div>} />
+                <Route path={'/chat/:name'} element={<ChatPage />} />
             </Routes>
         </BrowserRouter>
     </div>

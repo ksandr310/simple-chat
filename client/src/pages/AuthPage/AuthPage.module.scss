@@ -1,16 +1,15 @@
 @import 'src/stylesheets/colors.scss';
 @import 'src/stylesheets/common.scss';
+@import 'src/stylesheets/mixins.scss';
 
 .auth-page {
     align-items: center;
-    background-color: $black;
     color: $white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
     line-height: 24px;
-    font-weight: $font-weight-semibold;
 
     &__title {
         font-size: $font-size-title;
@@ -24,12 +23,11 @@
     }
 
     &__input {
+        @include withFont($font-size-large);
         background: transparent;
         border: 2px solid $input-border;
         border-radius: $border-radius;
         color: $white;
-        font-size: $font-size-large;
-        font-family: cursive;
         margin-bottom: 16px;
         padding: 16px;
         width: 400px;
@@ -40,14 +38,13 @@
     }
 
     &__button {
+        @include withFont($font-size-large);
         border: 0;
         border-radius: $border-radius;
         color: $black;
         cursor: pointer;
-        font-family: cursive;
         padding: 24px;
         width: 200px;
-        font-size: $font-size-large;
 
         &--disabled {
             cursor: default;

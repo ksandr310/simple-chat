@@ -1,0 +1,41 @@
+@import 'src/stylesheets/colors.scss';
+@import 'src/stylesheets/common.scss';
+@import 'src/stylesheets/mixins.scss';
+
+.chat-page {
+    color: $white;
+    height: 100vh;
+    line-height: 24px;
+
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        @include withFont($font-size-title);
+        align-items: center;
+        background-color: $message-background;
+        display: flex;
+        justify-content: center;
+        height: 60px;
+    }
+
+    &__container {
+        flex: 1;
+    }
+
+    &__footer {
+        @include withFont($font-size-large);
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 120px;
+        flex-direction: column;
+        background-color: $message-background;
+
+        // &-title {
+        // }
+
+        // &-input {
+        // }
+    }
+}
